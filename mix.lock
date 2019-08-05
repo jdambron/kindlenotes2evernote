@@ -1,0 +1,6 @@
+%{
+  "elixir_mbcs": {:git, "https://github.com/woxtu/elixir-mbcs.git", "8fb1fa7f029e2baf44cecd10f98e55c0980ce4c9", [tag: "0.1.3"]},
+  "erlyconv": {:git, "https://github.com/eugenehr/erlyconv.git", "46ced91a85e128ec459bbe5eda9a17408eb1e10b", []},
+  "iteraptor": {:hex, :iteraptor, "1.8.0", "fac52823838e5d1b49674185fd0d02a7710a9e0c7f356456a79f9b47103eb0a6", [:mix], [], "hexpm"},
+  "mbcs": {:git, "https://github.com/nekova/erlang-mbcs.git", "7bc88e28624abd6780073241e3bbb01b874b6a16", []},
+}
