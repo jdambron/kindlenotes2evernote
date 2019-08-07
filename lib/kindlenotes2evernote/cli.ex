@@ -1,4 +1,6 @@
 defmodule Kindlenotes2evernote.CLI do
+  @tmp_file "res.txt"
+
   def main(args) do
     args |> parse_args |> process
   end
@@ -68,8 +70,8 @@ defmodule Kindlenotes2evernote.CLI do
       |> Enum.join("\n\n")
 
     converted = :erlyconv.from_unicode(:cp1252, text)
-    File.write("res.txt", converted)
-    EvernoteService.create_note("res.txt", title)
-    File.rm("res.txt")
+    File.write(@tmp_file, converted)
+    # EvernoteService.create_note(@tmp_file, title)
+    # File.rm(@tmp_file)
   end
 end

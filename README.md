@@ -15,3 +15,9 @@ The application uses ENScript on Windows, so you need to have Evernote installed
 ```Shell
 mix escript.build
 ```
+
+## Run
+
+```Shell
+./kindlenotes2evernote --file="My Clippings.txt"
+```
