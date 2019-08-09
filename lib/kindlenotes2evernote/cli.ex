@@ -19,6 +19,7 @@ defmodule Kindlenotes2evernote.CLI do
     |> clean_entry
     |> split_highlights
     |> Stream.flat_map(&parse_highlight(&1))
+    |> Stream.filter(fn hl -> hl.content.highlight != "" end)
     |> regoup_by_title
     |> write_to_evernote
   end
@@ -71,7 +72,7 @@ defmodule Kindlenotes2evernote.CLI do
 
     converted = :erlyconv.from_unicode(:cp1252, text)
     File.write(@tmp_file, converted)
-    # EvernoteService.create_note(@tmp_file, title)
-    # File.rm(@tmp_file)
+    EvernoteService.create_note(@tmp_file, title)
+    File.rm(@tmp_file)
   end
 end
