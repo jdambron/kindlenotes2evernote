@@ -1,4 +1,7 @@
 # kindlenotes2evernote
+
+![Continuous Integration](https://github.com/jdambron/kindlenotes2evernote/workflows/Continuous%20Integration/badge.svg)
+
 Tool to convert kindle notes file to Evernote notes
 
 ## Disclaimer
