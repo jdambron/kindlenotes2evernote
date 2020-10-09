@@ -1,5 +1,10 @@
 # kindlenotes2evernote
 
+**Discontinued**
+
+⚠️ With Evernote v10 Windows client, there is no more ENScript utility, therefore this project cannot work anymore.
+This repository is now archived.
+
 ![Continuous Integration](https://github.com/jdambron/kindlenotes2evernote/workflows/Continuous%20Integration/badge.svg)
 
 Tool to convert kindle notes file to Evernote notes
